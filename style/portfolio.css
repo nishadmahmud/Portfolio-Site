@@ -263,3 +263,27 @@ footer textarea{
   display: flex;
   gap: 15px;
 }
+
+/* responsive */
+.hide{
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .skills-container, .resume-container, footer{
+    flex-direction: column;
+  }
+  .section-header{
+    padding: 0px;
+  }
+  footer{
+    padding: 20px;
+    gap: 20px;
+  }
+  .footer-column{
+    width: 100%;
+  }
+  footer input[type="email"], footer input[type="text"], footer textarea{
+    width: calc(100% - 40px);
+  }
+}
